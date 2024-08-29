@@ -5,45 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding Invitation - Nidhi & Abhishek</title>
     <style>
+        /* Global Styles */
         body {
             font-family: 'Georgia', serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f8ff;
+            background-color: #f3f0e9;
             color: #333;
             text-align: center;
+            background-image: url('https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-attachment: fixed;
         }
+        
         .container {
-            width: 80%;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 85%;
+            max-width: 700px;
+            margin: 30px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         }
+        
         h1, h2, h3 {
-            color: #004080;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin: 0.5em 0;
-        }
-        h2 {
-            font-size: 2em;
+            color: #d43f5e;
             margin-bottom: 0.5em;
         }
+        
+        h1 {
+            font-size: 3em;
+            margin-top: 0;
+            font-family: 'Brush Script MT', cursive;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            font-weight: normal;
+        }
+        
         h3 {
             font-size: 1.5em;
-            margin: 0.5em 0;
+            font-weight: normal;
         }
+        
         p {
             font-size: 1.2em;
-            margin: 0.5em 0;
+            margin: 0.8em 0;
         }
+        
         .venue-info, .date-info {
             margin-bottom: 20px;
         }
+        
         .map-container {
             position: relative;
             width: 100%;
@@ -51,9 +65,9 @@
             height: 0;
             overflow: hidden;
             border-radius: 8px;
-            margin-bottom: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         }
+        
         .map-container iframe {
             position: absolute;
             top: 0;
@@ -62,21 +76,49 @@
             height: 100%;
             border: 0;
         }
+        
+        .decorative-divider {
+            width: 50%;
+            height: 2px;
+            background: #d43f5e;
+            margin: 20px auto;
+        }
+        
         footer {
             text-align: center;
-            padding: 10px;
-            background: #004080;
+            padding: 15px;
+            background: #d43f5e;
             color: #fff;
             font-size: 1em;
+            border-radius: 0 0 8px 8px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+
+            h3 {
+                font-size: 1.3em;
+            }
+            
+            p {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Wedding Invitation</h1>
-        <h2>You are Cordially Invited to the</h2>
-        <h2>Marriage Ceremony of</h2>
         <h1>Nidhi & Abhishek</h1>
+        <h2>You are Cordially Invited to the</h2>
+        <h2>Marriage Ceremony</h2>
+        
+        <div class="decorative-divider"></div>
 
         <div class="venue-info">
             <h3>Venue</h3>
