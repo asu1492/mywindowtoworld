@@ -16,16 +16,38 @@
             background-image: url('https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80');
             background-size: cover;
             background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-        
-        .container {
-            width: 85%;
-            max-width: 700px;
-            margin: 30px auto;
-            padding: 30px;
+
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
             background: rgba(255, 255, 255, 0.9);
             border-radius: 12px;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            max-width: 90%;
+            overflow: hidden;
+        }
+
+        .image-container {
+            flex: 1;
+            min-width: 200px;
+            background: #fff;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-right: 2px solid #f3f0e9;
+        }
+
+        .content-container {
+            flex: 2;
+            padding: 30px;
         }
         
         h1, h2, h3 {
@@ -93,7 +115,12 @@
             border-radius: 0 0 8px 8px;
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
+            .wrapper {
+                flex-direction: column;
+                max-width: 100%;
+            }
+
             h1 {
                 font-size: 2.5em;
             }
@@ -113,29 +140,34 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Nidhi & Abhishek</h1>
-        <h2>You are Cordially Invited to the</h2>
-        <h2>Marriage Ceremony</h2>
-        
-        <div class="decorative-divider"></div>
-
-        <div class="venue-info">
-            <h3>Venue</h3>
-            <p><strong>HOTEL SAANJH PALACE</strong></p>
-            <p>NH 48, Bijainagar, Rajasthan 305624</p>
+    <div class="wrapper">
+        <div class="image-container">
+            <img src="https://res.cloudinary.com/dg1nnxhed/image/upload/v1724941845/Screenshot_2024-08-29_at_8.00.20_PM_uiabxj.png" alt="Wedding Invitation Image">
         </div>
+        <div class="content-container">
+            <h1>Nidhi & Abhishek</h1>
+            <h2>You are Cordially Invited to the</h2>
+            <h2>Marriage Ceremony</h2>
+            
+            <div class="decorative-divider"></div>
 
-        <div class="date-info">
-            <h3>Date</h3>
-            <p>9th & 10th December, 2024</p>
-        </div>
+            <div class="venue-info">
+                <h3>Venue</h3>
+                <p><strong>HOTEL SAANJH PALACE</strong></p>
+                <p>NH 48, Bijainagar, Rajasthan 305624</p>
+            </div>
 
-        <div class="section">
-            <h3>Location Map</h3>
-            <div class="map-container">
-                <!-- Embed Google Map iframe -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5006.568489650371!2d74.6204422!3d25.9257995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39693f22885b187b%3A0x520014a2dcd514bd!2sHOTEL%20SAANJH%20PALACE!5e0!3m2!1sen!2sin!4v1635786584598!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+            <div class="date-info">
+                <h3>Date</h3>
+                <p>9th & 10th December, 2024</p>
+            </div>
+
+            <div class="section">
+                <h3>Location Map</h3>
+                <div class="map-container">
+                    <!-- Embed Google Map iframe -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5006.568489650371!2d74.6204422!3d25.9257995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39693f22885b187b%3A0x520014a2dcd514bd!2sHOTEL%20SAANJH%20PALACE!5e0!3m2!1sen!2sin!4v1635786584598!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                </div>
             </div>
         </div>
     </div>
