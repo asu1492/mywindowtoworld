@@ -3,34 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Invitation</title>
-      <style>
+    <title>Wedding Invitation - Nidhi & Abhishek</title>
+    <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Georgia', serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #f0f8ff;
             color: #333;
+            text-align: center;
         }
         .container {
-            width: 90%;
-            max-width: 1200px;
+            width: 80%;
+            max-width: 800px;
             margin: 0 auto;
             padding: 20px;
             background: #fff;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #004080;
         }
         h1 {
-            text-align: center;
-            color: #d43f5e;
+            font-size: 2.5em;
+            margin: 0.5em 0;
         }
-        .section {
+        h2 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+        h3 {
+            font-size: 1.5em;
+            margin: 0.5em 0;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 0.5em 0;
+        }
+        .venue-info, .date-info {
             margin-bottom: 20px;
-        }
-        .section h2 {
-            border-bottom: 2px solid #d43f5e;
-            padding-bottom: 10px;
         }
         .map-container {
             position: relative;
@@ -38,9 +50,9 @@
             padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
             height: 0;
             overflow: hidden;
-            border: 1px solid #ddd;
             border-radius: 8px;
             margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .map-container iframe {
             position: absolute;
@@ -53,28 +65,32 @@
         footer {
             text-align: center;
             padding: 10px;
-            background: #d43f5e;
+            background: #004080;
             color: #fff;
+            font-size: 1em;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Wedding Invitation</h1>
+        <h2>You are Cordially Invited to the</h2>
+        <h2>Marriage Ceremony of</h2>
+        <h1>Nidhi & Abhishek</h1>
 
-        <div class="section">
-            <h2>Wedding Details</h2>
-            <p><strong>Date:</strong> December 9th and 10th, 2024</p>
-            <p><strong>Time:</strong> 9:00 AM</p>
+        <div class="venue-info">
+            <h3>Venue</h3>
+            <p><strong>HOTEL SAANJH PALACE</strong></p>
+            <p>NH 48, Bijainagar, Rajasthan 305624</p>
+        </div>
+
+        <div class="date-info">
+            <h3>Date</h3>
+            <p>9th & 10th December, 2024</p>
         </div>
 
         <div class="section">
-            <h2>Venue</h2>
-            <p><strong>Venue Name:</strong> HOTEL SAANJH PALACE</p>
-            <p><strong>Address:</strong> NH 48, Bijainagar, Rajasthan 305624</p>
-        </div>
-         <div class="section">
-            <h2>Location Map</h2>
+            <h3>Location Map</h3>
             <div class="map-container">
                 <!-- Embed Google Map iframe -->
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5006.568489650371!2d74.6204422!3d25.9257995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39693f22885b187b%3A0x520014a2dcd514bd!2sHOTEL%20SAANJH%20PALACE!5e0!3m2!1sen!2sin!4v1635786584598!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
@@ -83,7 +99,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2024 Wedding of [Nidhi] & [Abhishek]. All Rights Reserved.</p>
+        <p>&copy; 2024 Wedding of Nidhi & Abhishek. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
